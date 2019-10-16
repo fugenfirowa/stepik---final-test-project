@@ -1,7 +1,6 @@
 from pages.product_page import ProductPage
 from pages.base_page import BasePage
 import pytest
-import time
 
 @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1",
