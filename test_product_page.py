@@ -18,12 +18,12 @@ import pytest
 
 @pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser, link):
-   page = ProductPage(browser, link)
-   page.open()
-   page.add_to_basket()
-   page.solve_quiz_and_get_code()
-   page.confirmation_message_correct()
-   page.basket_total_correct()
+    page = ProductPage(browser, link)
+    page.open()
+    page.add_to_basket()
+    page.solve_quiz_and_get_code()
+    page.confirmation_message_correct()
+    page.basket_total_correct()
 
 @pytest.mark.xfail
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
